@@ -1,0 +1,16 @@
+{
+  "name": "webgl-cpp-calculator",
+  "version": "1.0.0",
+  "description": "3D Calculator powered by C++ & WebGL",
+  "scripts": {
+    "build": "mkdir -p build && cd build && emcmake cmake .. && emmake make",
+    "serve": "python3 -m http.server 8000 --directory build",
+    "deploy": "npm run build && gh-pages -d build"
+  },
+  "keywords": ["webgl", "calculator", "cpp", "wasm", "3d"],
+  "author": "Marco Ciência",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
